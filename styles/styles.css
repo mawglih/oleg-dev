@@ -194,7 +194,80 @@ ul .btn-primary:hover {
   font-weight: 900;
   color: wheat;
 }
+/*Main Modules*/
+.main-class{
+  margin-top:90px;
+}
+.main {
+    text-align: center;
+    height: 90vh;
+}
+.main-primary {
+    background-color: #666031;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.main-title {
+    margin-top: 25vh;
+    margin-bottom: 25px;
+    font-size: 2.625em;
+}
+.main-subtitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.500em;
+    font-weight: normal;
+}
+#btn-main-hover{
+  margin-top: 25px;
+}
+.main-secondary {
+    background-color: #3d6631;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+/*Background modules*/
+.bg-image{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.bg-image > img{
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-height:100%;
+}
+.main-primary.bg-image > img {
+  opacity: 0.55;
+}
+.main-secondary.bg-image > img {
+  opacity: 0.55;
+}
+.main-secondary i{
+  margin-right: 10px;
+}
+.main-body {
+    position: relative;
+}
+/*Media Object Module*/
+.media, .media-body {
+    overflow:hidden;
+}
+.media-item{
+  float: left;
+  margin-right: 10px;
+}
+.media-item i {
+  color:#666031;
 
+}
 /***************************
 ****************************
 Theme Styles
@@ -214,6 +287,9 @@ Theme Styles
 }
 .white{
   color: white !important;
+}
+.background-quinary {
+    background: #e7e1d7;
 }
 
 /*.background-primary {

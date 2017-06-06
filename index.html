@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link href="styles/normalize.css" rel="stylesheet">
         <link href="styles/styles.css" rel="stylesheet">
     </head>
@@ -36,12 +37,16 @@
         </div>
     </div>
     
-    <main>
-      <section>
-        <div class="jumbotron ">
-            
-                <img src="images/main.jpg" alt="bridge" class="img-responsive img-fluid center-block img-thumbnail">
-            
+    <main class="main-class">
+      <section class="main main-primary bg-image">
+       <img src="images/main.jpg" alt="bridge" class="img-responsive img-fluid center-block img-thumbnail">
+        <div class="container">
+            <div class="main-body">
+              <h1 class="main-title">Main Primary Title Content</h1>
+              <h4 class="main-subtitle">Main Primary Subtitle Content</h4>
+              <p> Content itself</p>
+              <button class="btn background-primary" id="btn-main-hover">Find out more</button>
+            </div>
         </div>
       </section>
       <section>
@@ -78,14 +83,40 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="main-secondary bg-image">
+       <img src="images/main2.jpg" alt="sea" class="img-responsive img-fluid center-block img-thumbnail">
         <div class="container">
-          Testimonial Content
+            <div class="main-body">
+              <i class="fa fa-flag fa-2x"></i><i class="fa fa-flag fa-2x"></i><i class="fa fa-flag fa-2x"></i><i class="fa fa-flag fa-2x"></i>
+              <h4 class="main-subtitle">Main secondary Subtitle Content</h4>
+              <p> Content itself</p>
+            </div>
         </div>
       </section>
-      <section>
+      <section class="background-quinary">
         <div class="container">
-          Media Objects
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="media">
+                    <div class="media-item"><i class="fa fa-camera-retro fa-4x"></i></div>
+                      <div class="media-body">
+                          <h4 class="media-heading">Media heading</h4>
+                          <p>Detail content for the media object.</p>
+                          <button class="btn background-primary white">Click Me</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="media">
+                    <div class="media-item"><i class="fa fa-html5 fa-4x"></i></div>
+                      <div class="media-body">
+                          <h4 class="media-heading">Media heading</h4>
+                          <p>Detail content for the media object.</p>
+                          <button class="btn background-primary white">Click Me</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
         </div>
       </section>
     </main>
