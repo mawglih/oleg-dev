@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
         <link href="styles/normalize.css" rel="stylesheet">
         <link href="styles/styles.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="background-secondary">
         <div class="header">
-        <div class="navbar navbar-fixed-top  navbar-default" id="navbar-div" role="navigation">
+        <div class="navbar navbar-fixed-top  navbar-inverse" id="navbar-div" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse" aria-expanded="false">
@@ -20,7 +21,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand pull-left" id="brand-id" href="#/"><img class="logo logo-primary" src="images/logo.png" alt="logo"></a>
+                    <div id="brand-id" class="visible-lg visible-xs"><a class="navbar-brand pull-left"  href="#/"><img class="logo logo-primary" src="images/logo.png" alt="logo"> Website Development</a></div>
                 </div>
 
                 <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -32,37 +33,47 @@
                         <li><a href="#" class="btn btn-nav">For Employers</a></li>
                         <li><a href="#" class="btn btn-nav">Test area</a></li>
                     </ul>
+                    <form class="navbar-form navbar-right hidden-sm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" id="navbar-search">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
     
     <main class="main-class container-fluid">
-      <section class="main main-primary bg-image">
-       <img src="images/main.jpg" alt="bridge" class="img-responsive img-fluid center-block img-thumbnail">
+      <section class="main main-primary bg-image jumbotron">
+       <img src="images/main.jpg" alt="bridge" class="img-responsive img-fluid center-block">
         <div class="container">
             <div class="main-body">
-              <h1 class="main-title">Main Primary Title Content</h1>
-              <h4 class="main-subtitle">Main Primary Subtitle Content</h4>
-              <p> Content itself</p>
+              <h1 class="main-title">Building Websites to Meet Your Needs</h1>
+              <h4 class="main-subtitle">Fast, Mobile-friendly, Based on Modern Technology</h4>
+              <p> Coming soon</p>
               <button class="btn background-primary" id="btn-main-hover">Find out more</button>
             </div>
         </div>
       </section>
-      <section>
+      <section id="section-secondary">
         <div class="container">
           <div class="row">
-              <div class="col-1-3 pull-right-sm">
-                  Circle Image
+              <div class="col-md-5 col-md-push-7 white">
+                  <div class="frame frame-primary"><img src="images/foto6_300.jpg" alt="flower" class="visible-md visible-lg">
+                  <img src="images/foto6_180.jpg" alt="flower" class="visible-xs visible-sm"></div>
               </div>
-              <div class="col-2-3">
-                  Content Area
+              <div class="col-md-7  col-md-pull-5 white text-center">
+                  <h2>Your Creativity on the Web</h2>
+                  <h3>Bring your ideas online</h3>
+                  <p> Design and Website createion. <br> Finding right domain name.<br> Service to find hosting that meets your needs.</p>
               </div>
           </div>
         </div>
       </section>
-      <section class="background-tertiary" >
-        <div>
+      <section>
           <div class="row" id="feature-row">
             
             <div class="col-sm-3" id="feature1">
@@ -81,34 +92,35 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
       <section class="main-secondary bg-image">
-       <img src="images/main2.jpg" alt="sea" class="img-responsive img-fluid center-block img-thumbnail">
-            <div class="main-body">
+       <img src="images/main2.jpg" alt="sea" class="img-responsive img-fluid center-block">
+            <div class="main-body" id="body-sec">
               <i class="fa fa-flag fa-2x"></i><i class="fa fa-flag fa-2x"></i><i class="fa fa-flag fa-2x"></i><i class="fa fa-flag fa-2x"></i>
-              <h4 class="main-subtitle">Main secondary Subtitle Content</h4>
+              <h4 class="main-subtitle">Testimonials</h4>
               <p> Content itself</p>
             </div>
       </section>
-      <section class="background-quinary">
+      <section class="background-quinary media-section">
             <div class="row">
-                <div class="col-sm-6">
-                  <div class="media">
-                    <div class="media-item"><i class="fa fa-camera-retro fa-4x"></i></div>
+                <div class="col-sm-6" id="media1">
+                  <div class="media" >
+                    <div class="media-item media-left media-middle"><i class="fa fa-camera-retro fa-4x"></i></div>
                       <div class="media-body">
-                          <h4 class="media-heading">Media heading</h4>
-                          <p>Detail content for the media object.</p>
-                          <button class="btn background-primary white">Click Me</button>
+                          <h4 class="media-heading">Picture gallery</h4>
+                          <p class="well">All pictures made by our team</p>
+                          <button class="btn background-primary white center-block">Click Me</button>
                       </div>
                   </div>
+                </div>
+                
                 <div class="col-sm-6">
                   <div class="media">
-                    <div class="media-item"><i class="fa fa-html5 fa-4x"></i></div>
+                    <div class="media-item media-left media-middle"><i class="fa fa-html5 fa-4x"></i></div>
                       <div class="media-body">
-                          <h4 class="media-heading">Media heading</h4>
-                          <p>Detail content for the media object.</p>
-                          <button class="btn background-primary white">Click Me</button>
+                          <h4 class="media-heading">Modern Website Technology</h4>
+                          <p class="well">Website is created using modern standards of HTML5, CSS3, ECMA5, AngularJS, Meteor, NodeJS</p>
+                          <button class="btn background-primary white center-block">Click Me</button>
                       </div>
                   </div>
                 </div>
@@ -116,9 +128,21 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="navbar background-quaternary white" id="footer1">
       <div class="container">
-        Footer Content
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="footer-span text-center" id="footer-span1"><i class="fa fa-copyright fa-2x"></i> Oleg Markoff 2017</span>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-4">
+            <a href="mailto:mawglih@gmail.com"><span class="footer-span text-center" id="footer-span2"><i class="fa fa-envelope fa-2x"></i> Email Us  </span></a><i class="fa fa-check fa-2x" id="check-hidden"></i>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-4">
+            <a href="tel:201-638-7297"><span class="footer-span" id="footer-span3"><i class="fa fa-volume-control-phone fa-2x"></i> Call us: 201-638-7297</span></a>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>

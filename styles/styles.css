@@ -43,7 +43,9 @@ Layout Styles
 
 
 @media (min-width: 48em) {
-
+.main-class{
+  margin-top:100px;
+}
 #feature1{
   background: url("../images/foto3_600.jpg");
 }
@@ -57,45 +59,36 @@ Layout Styles
   
 #feature1, #feature2, #feature3{
   min-height: 500px;
-  width:33%;
+  width:33.33333%;
   position: relative;
 }
 #feature1:hover, #feature2:hover, #feature3:hover {
   opacity:.7;
-  width:32%;
-  border: 10px solid wheat;
+  width:33%;
+  border: 8px solid wheat;
+  border-radius:10px;
 }
-
-.header-primary {
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 18px;
+.frame-primary{
+  margin: 25px auto 40px auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #666031;
+  border-radius: 50%;
+  background: #3d6631;
+  opacity: 0.8;
 }
-  .nav-primary{
-      float: right;
-      margin-top:0px;
-      width:90%;
-      text-align: right;
-      
-  }
-  .nav-primary li{
-      display: inline-block;
-  }
-  ul>li {
-      padding: 0 0 -30px 0;
-      margin: 0 0 -50px 0;
-  }
- 
+.frame-primary:hover{
+  opacity: 0.4;
+}
 }
 
 
 
 @media only screen and (max-width : 47.9375em) {
-  .remove-gutter-xs {
-    padding-left: 0px;
-    padding-right: 0px;
+  .main-class{
+     margin-top:150px;
   }
-  #feature1, #feature2, #feature3{
+ #feature1, #feature2, #feature3{
   min-height: 300px;
   width:100%;
   position: relative;
@@ -116,7 +109,25 @@ Layout Styles
 #feature3{
   background: url("../images/foto5_400.jpg");
 }
+.media{
+  margin-bottom: 20px;
+  }
+#media1{
+  border-bottom: dotted 2px #666031;
 }
+.frame-primary{
+  margin: auto;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #666031;
+  border-radius: 50%;
+}
+#footer-span1,#footer-span2,#footer-span3 {
+  
+  padding-left:40px;
+}
+}
+
 
 /***************************
 ****************************
@@ -124,83 +135,50 @@ Modules
 ****************************
 ***************************/
 /*Navigation Modules*/
-.header{
-    margin-bottom:35px;
+#brand-id{
+  display: inline;
+  font-family: 'Rock Salt', cursive;
+}
+.navbar-brand{
+  padding:0 0;
+}
+#brand-id img{
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#nav-list li{
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.5em;
+}
+#navbar-search{
+  font-family: 'Rock Salt', cursive;
+  font-size:0.8em;
 }
 /*Logo Modules*/
 .logo-primary{
-    border: 2px solid #3d6631;
+    border: 1px solid #3d6631;
     border-radius: 50%;
+    padding: 5px;
 }
 /*Header Modules*/
 #navbar-div {
     background: #5a3166;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 45px;
+    padding: 20px;
 }
 /*Button Modules*/
-ul .btn{
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    background-image: none;
-    border: 1px solid transparent;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 12px 30px;
-    font-size: 1.313em;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: all 0.3s ease 0s;
-}
-ul .btn-primary{
-    background: #3d6631;
-    border-color: #3d6631;
-    color: white;
-}
-ul .btn-nav {
-    color: gray;
-}
-ul .btn-primary:hover {
-    background: none;
-    border-color: #666031;
-    text-decoration: none;
-    color: #666031;
-}
+
 /*Jumbotron Modules*/
 .jumbotron{
   background-color: #3d6631;
 }
-/*Feature modules*/
-
-#feature1, #feature2, #feature3 {
-  background-color: #666031;
-  position:relative;
-  background-size: cover;
-  transition: border 1s, width 2s;
-}
 
 
-.feature-content{
-  position: relative;
-  top:100px;
-  left:100px;
- 
-}
-.feature-content>h1{
-  font-weight: 900;
-  color: wheat;
-}
 /*Main Modules*/
-.main-class{
-  margin-top:90px;
-}
+
 .main {
     text-align: center;
-    height: 90vh;
+    height: 85vh;
 }
 .main-primary {
     background-color: #666031;
@@ -223,7 +201,6 @@ ul .btn-primary:hover {
   margin-top: 25px;
 }
 .main-secondary {
-    background-color: #3d6631;
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -243,30 +220,80 @@ ul .btn-primary:hover {
   right: -9999px;
   margin: auto;
   min-height:100%;
+
 }
-.main-primary.bg-image > img {
-  opacity: 0.55;
-}
-.main-secondary.bg-image > img {
-  opacity: 0.55;
-}
-.main-secondary i{
-  margin-right: 10px;
+.main-primary.bg-image > img, .main-secondary.bg-image > img {
+  opacity: 0.45;
 }
 .main-body {
     position: relative;
 }
-/*Media Object Module*/
-.media, .media-body {
-    overflow:hidden;
+#section-secondary, #section-feature{
+  position: relative;
 }
-.media-item{
-  float: left;
+.main-secondary i{
   margin-right: 10px;
 }
-.media-item i {
-  color:#666031;
 
+/*Feature modules*/
+#feature1, #feature2, #feature3 {
+  background-color: #666031;
+  position:relative;
+  background-size: cover;
+  transition: border 1s, width 2s;
+}
+
+
+.feature-content{
+  position: absolute;
+  top:100px;
+  left:100px;
+ 
+}
+.feature-content>h1{
+  font-weight: 900;
+  color: wheat;
+}
+
+/*Media Object Module*/
+.media{
+  padding:20px;
+}
+.media button:hover{
+  font-size: 2rem;
+}
+.media i:hover{
+  color: #66313d
+}
+/*Circle Module*/
+.frame{
+  overflow: hidden;
+}
+.frame{
+  transition: opacity 2s;
+}
+/*footer module*/
+#footer1{
+  margin-bottom: 0px;
+  padding: 20px 0 20px 0;
+}
+#footer-span1,#footer-span2,#footer-span3 {
+  font-family: 'Rock Salt', cursive;
+}
+.footer-span{
+  padding-top: 30px;
+  vertical-align: middle;
+}
+#footer-span2, #footer-span3{
+  color: white;
+}
+#footer-span2:hover, #footer-span3:hover{
+  color:wheat;
+  font-size: 110%;
+  text-decoration: none !important;
+}
+#check-hidden{
+  visibility: hidden;
 }
 /***************************
 ****************************
