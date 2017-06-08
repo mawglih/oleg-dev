@@ -16,6 +16,10 @@
     function RoutesConfig($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/');
         $stateProvider
+        .state('home', {
+            url: '/',
+            templateUrl:'../index.html'
+        })
         .state('main', {
             url: '/',
             templateUrl:'views/main.html'
