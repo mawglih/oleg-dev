@@ -1,0 +1,69 @@
+@import 'normalize.css';
+
+/* Change all elements to use border-box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/***************************
+****************************
+Theme Styles
+****************************
+***************************/
+.background-primary {
+  background: #5a3166;
+}
+.background-secondary {
+  background:  #666031;
+}
+.background-tertiary {
+  background: #3d6631;
+}
+.background-quaternary {
+  background: #66313d;
+}
+.white{
+  color: white !important;
+}
+.background-quinary {
+    background: #e7e1d7;
+}
+/***************************
+****************************
+Modules
+****************************
+***************************/
+/*Navigation Modules*/
+#brand-id{
+  display: inline;
+  font-family: 'Rock Salt', cursive;
+}
+.navbar-brand{
+  padding:0 0;
+}
+#brand-id img{
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#nav-list li{
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.5em;
+}
+#navbar-search{
+  font-family: 'Rock Salt', cursive;
+  font-size:0.8em;
+}
+/*Logo Modules*/
+.logo-primary{
+    border: 1px solid #3d6631;
+    border-radius: 50%;
+    padding: 5px;
+}
+/*Header Modules*/
+#navbar-div {
+    background: #5a3166;
+    padding: 20px;
+}
