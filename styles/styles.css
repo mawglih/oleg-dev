@@ -56,7 +56,7 @@ Layout Styles
 #feature3{
   background: url("../images/foto5_600.jpg");
 }
-  
+
 #feature1, #feature2, #feature3{
   min-height: 500px;
   width:33.33333%;
@@ -80,6 +80,7 @@ Layout Styles
 .frame-primary:hover{
   opacity: 0.4;
 }
+
 }
 
 
@@ -123,7 +124,7 @@ Layout Styles
   border-radius: 50%;
 }
 #footer-span1,#footer-span2,#footer-span3 {
-  
+
   padding-left:40px;
 }
 }
@@ -194,7 +195,7 @@ Modules
 .main-subtitle {
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 1.500em;
+    font-size: 2.500em;
     font-weight: normal;
 }
 #btn-main-hover{
@@ -205,6 +206,11 @@ Modules
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
+}
+.main-list{
+  padding-top:20px;
+  font-size:1.5em;
+  list-style-type: none;
 }
 /*Background modules*/
 .bg-image{
@@ -234,7 +240,15 @@ Modules
 .main-secondary i{
   margin-right: 10px;
 }
-
+#btn-secondary{
+  border: 2px #666031 solid;
+  border-radius: 10px;
+}
+#btn-secondary:hover{
+  font-size: 1.4em;
+  padding: 25px;
+  transition: padding 2s;
+}
 /*Feature modules*/
 #feature1, #feature2, #feature3 {
   background-color: #666031;
@@ -248,7 +262,7 @@ Modules
   position: absolute;
   top:100px;
   left:100px;
- 
+
 }
 .feature-content>h1{
   font-weight: 900;
